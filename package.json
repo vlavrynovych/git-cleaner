@@ -32,6 +32,9 @@
     "url": "https://github.com/RobinCK/git-cleaner/issues"
   },
   "homepage": "https://github.com/RobinCK/git-cleaner#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
     "cli-progress": "^3.8.2",

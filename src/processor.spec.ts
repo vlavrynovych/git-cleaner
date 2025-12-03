@@ -19,7 +19,7 @@ describe('processor', () => {
             update: jest.fn(),
             stop: jest.fn(),
         };
-        (progress.Bar as jest.Mock).mockImplementation(() => mockBar);
+        (progress.Bar as unknown as jest.Mock).mockImplementation(() => mockBar);
         mockStepCallback = jest.fn().mockResolvedValue(undefined);
     });
 

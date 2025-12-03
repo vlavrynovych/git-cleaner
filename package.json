@@ -35,6 +35,9 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "resolutions": {
+    "commander": "^6.2.1"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
     "cli-progress": "^3.8.2",

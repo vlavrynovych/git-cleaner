@@ -3,8 +3,8 @@ import * as chalk from 'chalk';
 const _logger = console.log; // eslint-disable-line
 
 export const logger = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
     log: (...args: any): void => {
-        // eslint-disable-line
         _logger(...args);
     },
 

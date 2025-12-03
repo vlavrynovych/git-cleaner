@@ -9,7 +9,9 @@
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && npm run build",
     "commit": "npx git-cz",
     "lint": "eslint . --ext .ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "bin": {
     "gitc": "dist/cli.js"
@@ -30,6 +32,12 @@
     "url": "https://github.com/RobinCK/git-cleaner/issues"
   },
   "homepage": "https://github.com/RobinCK/git-cleaner#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "resolutions": {
+    "commander": "^6.2.1"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
     "cli-progress": "^3.8.2",
@@ -44,6 +52,7 @@
     "@types/chalk": "^2.2.0",
     "@types/cli-progress": "^3.8.0",
     "@types/commander": "^2.12.2",
+    "@types/jest": "^26.0.24",
     "@types/node": "^14.6.0",
     "@types/prompts": "^2.0.8",
     "@typescript-eslint/eslint-plugin": "^3.9.1",
@@ -52,10 +61,12 @@
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.7.0",
     "husky": "^4.2.5",
+    "jest": "^26.6.3",
     "jsonlint": "^1.6.3",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "trash-cli": "^3.1.0",
+    "ts-jest": "^26.5.6",
     "typescript": "^3.9.7"
   }
 }

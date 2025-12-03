@@ -11,9 +11,9 @@
     "declaration": true,
     "strict": true,
     "lib": ["es2015"],
-    "types": ["node"],
+    "types": ["node", "jest"],
     "pretty": true,
     "typeRoots": ["node_modules/@types", "src/types"]
   },
-  "exclude": ["dist", "coverage", ".nyc_output", "node_modules", "test"]
+  "exclude": ["dist", "coverage", ".nyc_output", "node_modules", "test", "**/*.spec.ts"]
 }

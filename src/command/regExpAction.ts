@@ -1,5 +1,5 @@
 import { GitClient } from '../GitClient';
-import { selectPrompt, remotesPrompt } from '../prompt';
+import { remotesPrompt } from '../prompt';
 import { RegExpException } from '../exception';
 import { logger } from '../utils';
 import * as chalk from 'chalk';
